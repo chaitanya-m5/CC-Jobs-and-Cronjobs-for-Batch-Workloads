@@ -1,6 +1,7 @@
 # BatchOps: Kubernetes Jobs and CronJobs Management System
 
 **Containerized Batch Processing | Automated Scheduling | Failure Recovery | Workload Monitoring**
+
 BatchOps is a Kubernetes-based batch workload management and monitoring system designed to demonstrate how containerized applications can be executed, scheduled, monitored, and recovered from failures using Kubernetes Jobs and CronJobs.
 
 The project combines Kubernetes workload orchestration with a custom web dashboard and FastAPI backend, providing a centralized interface to manage batch executions, inspect Pod activity, monitor failures, and retrieve application logs.
