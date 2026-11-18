@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: report-job
+spec:
+  completions: 3
+  parallelism: 1
+  backoffLimit: 4
+  template:
+    spec:
+      containers:
+      - name: report
+        image: batch-app:1.0
+        imagePullPolicy: IfNotPresent
+      restartPolicy: Never

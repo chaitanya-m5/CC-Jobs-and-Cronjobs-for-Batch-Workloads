@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: report-fail-job
+spec:
+  backoffLimit: 3
+  template:
+    spec:
+      containers:
+      - name: report
+        image: batch-app:1.0
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: FAIL
+          value: "true"
+      restartPolicy: Never
